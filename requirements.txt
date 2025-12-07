@@ -2,3 +2,4 @@ scrapy
 scrapy-playwright
 fastapi
 fastapi-cache2
+redis
