@@ -21,7 +21,8 @@ def create_app():
 
 
     # Include the routers in the app
-    from routes import exchanges_router
+    from routes import main_router, exchanges_router
+    app.include_router(main_router)
     app.include_router(exchanges_router)
 
     return app
