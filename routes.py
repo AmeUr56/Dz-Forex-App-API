@@ -24,7 +24,7 @@ exchanges_router = APIRouter(prefix="/exchanges", tags=["exchanges"])
 async def get_exchanges():
     subprocess.run(
         ["python", "-m", "scrapy", "crawl", "exchanges", "-O", "data.json"], 
-        cwd=r"C:\Users\THINKPAD\Desktop\Flutter TP\ExchangeCrawler"
+        cwd="ExchangeCrawler"
     )
 
     with open("ExchangeCrawler/data.json", "r") as file:
